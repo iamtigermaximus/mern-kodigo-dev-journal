@@ -42,20 +42,18 @@ export default function Create() {
       <h3>Create A Note</h3>
       <form onSubmit={onSubmit}>
         <div className='form-group'>
-          <label htmlFor='title'>Name</label>
+          <label htmlFor='title'>Title</label>
           <input
             type='text'
-            className='form-control'
             id='title'
             value={form.title}
             onChange={(e) => updateForm({ title: e.target.value })}
           />
         </div>
         <div className='form-group'>
-          <label htmlFor='content'>Position</label>
+          <label htmlFor='content'>Content</label>
           <input
             type='text'
-            className='form-control'
             id='content'
             value={form.content}
             onChange={(e) => updateForm({ content: e.target.value })}
@@ -94,19 +92,19 @@ export default function Create() {
             <input
               className='form-check-input'
               type='radio'
-              name='topicOptions'
-              id='topicOther'
-              value='Other'
-              checked={form.topic === 'Other'}
+              name='topicOthers'
+              id='topicOthers'
+              value='Others'
+              checked={form.topic === 'Others'}
               onChange={(e) => updateForm({ topic: e.target.value })}
             />
-            <label htmlFor='topicOther' className='form-check-label'>
-              Other
+            <label htmlFor='topicOthers' className='form-check-label'>
+              Others
             </label>
           </div>
         </div>
         <div className='form-group'>
-          <input type='submit' value='Create' className='btn btn-primary' />
+          <input type='submit' value='Create' />
         </div>
       </form>
     </div>
