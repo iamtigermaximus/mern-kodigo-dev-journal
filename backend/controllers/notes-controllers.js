@@ -36,8 +36,8 @@ const addNote = async (req, res, next) => {
       title,
       content,
       topic,
-      completed,
-      createdAt,
+      completed: false,
+      createdAt: new Date(),
     })
     await note.save()
   } catch (err) {
@@ -59,8 +59,8 @@ const updateNote = async (req, res, next) => {
       title,
       content,
       topic,
-      completed,
-      createdAt,
+      completed: false,
+      createdAt: new Date(),
     })
     note = await note.save()
   } catch (err) {
