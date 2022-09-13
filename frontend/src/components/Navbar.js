@@ -119,7 +119,7 @@ const Navbar = () => {
             </Link>
           </LinkItemContainer>
           <LinkItemContainer>
-            <Link to='/create-notes'>
+            <Link to='/addNote'>
               <LinkItem> + CREATE A NOTE</LinkItem>
             </Link>
           </LinkItemContainer>
@@ -142,7 +142,7 @@ const Navbar = () => {
                 </Link>
               </LinkItemContainer>
               <LinkItemContainer>
-                <Link to='/create-notes'>
+                <Link to='/addNote'>
                   <LinkItem>CREATE A NOTE</LinkItem>
                 </Link>
               </LinkItemContainer>
