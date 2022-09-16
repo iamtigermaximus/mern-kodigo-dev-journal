@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Container = styled.div`
   height: 100vh;
@@ -61,7 +62,10 @@ const Home = () => {
             <h4>{note.topic}</h4>
           </NoteCard>
           <div>
-            <button>Edit</button> |
+            <Link to={`/editNote/${note._id}`}>
+              <button>Edit</button> |
+            </Link>
+
             <button onClick={() => deleteNote(note._id)}>Delete</button>
           </div>
         </div>

@@ -76,7 +76,7 @@ const RadioLabel = styled.label`
   margin-left: 5px;
 `
 
-export default function Create() {
+const CreateNote = () => {
   const [form, setForm] = useState({
     title: '',
     content: '',
@@ -194,3 +194,4 @@ export default function Create() {
     </Container>
   )
 }
+export default CreateNote
