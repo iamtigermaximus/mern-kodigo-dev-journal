@@ -55,7 +55,7 @@ const updateNote = async (req, res, next) => {
   const { title, content, topic, completed, createdAt } = req.body
   let note
   try {
-    note = await Book.findByIdAndUpdate(id, {
+    note = await Note.findByIdAndUpdate(id, {
       title,
       content,
       topic,
